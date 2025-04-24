@@ -5,6 +5,10 @@ class GetStartedPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Container();
+    return Container(
+      child: Center(
+        child: Text('Get Started Page', style: TextStyle(fontSize: 24)),
+      ),
+    );
   }
 }
