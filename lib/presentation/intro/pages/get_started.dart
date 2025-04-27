@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
+import 'package:spotify_clone/common/widgets/button/basic_app_button.dart';
 import 'package:spotify_clone/core/configs/assets/app_images.dart';
 import 'package:spotify_clone/core/configs/assets/app_vectors.dart';
 import 'package:spotify_clone/core/configs/themes/app_colors.dart';
@@ -26,8 +27,8 @@ class GetStartedPage extends StatelessWidget {
                   alignment: Alignment.topCenter,
                   child: SvgPicture.asset(AppVectors.logo),
                 ),
-                Spacer(),
-                Text(
+                const Spacer(),
+                const Text(
                   'Enjoy listening to music',
                   style: TextStyle(
                     fontWeight: FontWeight.bold,
@@ -35,7 +36,7 @@ class GetStartedPage extends StatelessWidget {
                     fontSize: 18,
                   ),
                 ),
-                Text(
+                const Text(
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                   style: TextStyle(
                     fontWeight: FontWeight.w500,
@@ -44,6 +45,8 @@ class GetStartedPage extends StatelessWidget {
                   ),
                   textAlign: TextAlign.center,
                 ),
+                const SizedBox(height: 20),
+                BasicAppButton(onPressed: () => {}, title: 'Get Started'),
               ],
             ),
           ),
