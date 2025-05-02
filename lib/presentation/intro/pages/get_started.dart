@@ -41,6 +41,7 @@ class GetStartedPage extends StatelessWidget {
                     fontSize: 18,
                   ),
                 ),
+                const SizedBox(height: 21),
                 const Text(
                   'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
                   style: TextStyle(
